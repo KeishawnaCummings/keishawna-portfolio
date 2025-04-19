@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keishawna Cummings Portfolio</title>
+  <style>
+    html, body {{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }}
+    header {{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+    }}
+    header h1 {{
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      animation: fadeInUp 2s ease-in-out;
+    }}
+    video.logo {{
+      max-width: 150px;
+      height: auto;
+      animation: glowFade 3s infinite alternate;
+    }}
+    section {{
+      padding: 60px 30px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 2s ease-in-out;
+    }}
+    h2 {{
+      border-bottom: 2px solid #00f0ff;
+      padding-bottom: 10px;
+    }}
+    @keyframes glowFade {{
+      from {{ filter: drop-shadow(0 0 10px #00f0ff); }}
+      to {{ filter: drop-shadow(0 0 20px #00e6e6); }}
+    }}
+    @keyframes fadeIn {{
+      from {{ opacity: 0; transform: translateY(40px); }}
+      to {{ opacity: 1; transform: translateY(0); }}
+    }}
+    @keyframes fadeInUp {{
+      from {{ opacity: 0; transform: translateY(30px); }}
+      to {{ opacity: 1; transform: translateY(0); }}
+    }}
+    canvas#particles-js {{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }}
+  </style>
+</head>
+<body>
+  <canvas id="particles-js"></canvas>
+  <header>
+    <h1>Hi, I'm</h1>
+    <video class="logo" autoplay loop muted playsinline>
+      <source src="logo.mp4" type="video/mp4" />
+    </video>
+  </header>
+  <section>
+    <h2>Skills</h2>
+    <p>Product Management: Vision & Strategy | Roadmaps | AI/Automation | Stakeholder Alignment | User Workflow Optimization | Data-Driven Decision Making | A/B Testing</p>
+    <p>Technical: Jira | Google Analytics | SQL (Basic) | Shopify (Automation Tools) | MS Excel (Data Modeling)</p>
+    <p>Leadership: Cross-functional Collaboration | Agile Environments | Metrics-Driven Growth | Seller/Customer-Centric Solutions</p>
+    <p>Business Ops: Process Automation | Scalability | ROI Analysis | KPI Tracking</p>
+  </section>
+  <section>
+    <h2>Professional Experience</h2>
+    <h3>Manager II, Operations – Amazon</h3>
+    <ul>
+      <li>Reduced manual labor by 47.55% with real-time tracking and process automation</li>
+      <li>Developed dashboards improving productivity by 8% and on-time delivery to 98.79%</li>
+      <li>Ranked #1 in sub-region for cost management</li>
+      <li>Oversaw 8 delivery service providers at NV’s largest delivery station</li>
+      <li>Improved process adherence and performance rates by over 60% through coaching</li>
+      <li>Reduced injuries by 59% with safety sync initiatives</li>
+    </ul>
+    <h3>Marketer Intern – State36</h3>
+    <ul>
+      <li>Boosted email open rates by 30% with automation</li>
+      <li>Collaborated cross-functionally to improve campaign ROI by 20%</li>
+    </ul>
+    <h3>Digital Commerce Strategist – Bentura</h3>
+    <ul>
+      <li>Increased traffic/conversions by 75% using AI ad tools</li>
+      <li>Cut holding costs by 15% and improved satisfaction by 30%</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Education</h2>
+    <p>Bachelor of Science, Business Administration, University of Nevada Reno</p>
+    <p>Minor: Business Analytics | Relevant Courses: Predictive Analytics, Digital Marketing, Ops Mgmt</p>
+  </section>
+  <section>
+    <h2>Key Achievements</h2>
+    <ul>
+      <li>Reduced non-productive labor hours by 47.55% at Amazon</li>
+      <li>Drove 75% traffic growth at Bentura via AI ads</li>
+      <li>Aligned staffing/workflows to earn #1 sub-regional cost efficiency rank</li>
+    </ul>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {{
+      "particles": {{
+        "number": {{
+          "value": 80,
+          "density": {{
+            "enable": true,
+            "value_area": 800
+          }}
+        }},
+        "color": {{
+          "value": "#00e6e6"
+        }},
+        "shape": {{
+          "type": "circle"
+        }},
+        "opacity": {{
+          "value": 0.5
+        }},
+        "size": {{
+          "value": 3
+        }},
+        "line_linked": {{
+          "enable": true,
+          "distance": 150,
+          "color": "#00f0ff",
+          "opacity": 0.4,
+          "width": 1
+        }},
+        "move": {{
+          "enable": true,
+          "speed": 2
+        }}
+      }},
+      "interactivity": {{
+        "detect_on": "canvas",
+        "events": {{
+          "onhover": {{
+            "enable": true,
+            "mode": "repulse"
+          }}
+        }}
+      }},
+      "retina_detect": true
+    }});
+  </script>
+</body>
+</html>
